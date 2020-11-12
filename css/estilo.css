@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  padding: 10px;
+  text-align: left;
+}
+
+.header {
+  grid-area: header;
+  background-image: url(../img/logoheader.jpg);
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #fff;
+  padding-top: 2%;
+  padding-left: 18%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #F4B3AF;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  background-color: #fff;
+  padding: 5%;
+
+}
+
+.footer {
+  grid-area: footer;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #362727;
+}
+
+#logoheader{
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header"  100px
+    "main"    auto
+    "navbar"  420px
+    "sidebar" 500px
+    "footer"  50px;
+}
+    .nombre{
+    font-size: 15px;
+    color: #ffff;
+    padding-top: 5px;
+    text-decoration: none;
+  
+}
+    
+   h1{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  
+}
+
+h2{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  
+}
+
+h3{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 3%;
+  
+}
+
+h4{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+#formulario{
+  width: 65%;
+  height: 465px;
+  padding-top: 1%;
+  margin-left: 15%;
+  background-color: #F4B3AF;
+  border-radius: 5px;
+
+}
+
+.botonturnos{
+  width: 200px;
+  height: 25px;
+  background-color: #362727;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-top: 6%;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    /* grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "sidebar main"
+    "footer  footer"; */
+
+    grid-template:
+      "header  header" 100px
+      "main    sidebar"auto
+      "navbar  navbar" 420px
+      "footer  footer" 50px /
+      auto    250px;
+    }
+
+    .nombre{
+    font-size: 15px;
+    color: #ffff;
+    padding-top: 5px;
+    text-decoration: none;
+
+    }
+
+    h1{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  
+}
+
+h2{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  
+}
+
+h3{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  
+}
+
+h4{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+   
+  
+}
+
+#formulario{
+  width: 95%;
+  height: 485px;
+  padding-top: 2%;
+  margin-top: 7%;
+  margin-left: 2%;
+  margin-right: 33%;
+  background-color: #F4B3AF;
+  border-radius: 5px;
+
+}
+
+  .botonturnos{
+  width: 150px;
+  height: 25px;
+  background-color: #362727;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-top: 6%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fff;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #fff;
+  
+  
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  150px
+      "main    navbar sidebar" auto
+      "footer  footer footer"  50px /
+      auto     400px  350px;
+}
+
+.nombre{
+  font-size: 15px;
+  color: #ffff;
+  padding-top: 5px;
+  text-decoration: none;
+  
+}
+
+h1{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  
+}
+
+h2{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  
+}
+
+h3{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 2%;
+  
+}
+
+h4{ color: #362727;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+#formulario{
+  width: 80%;
+  height: 485px;
+  padding-top: 2%;
+  margin-top: 7%;
+  margin-left: 2%;
+  margin-right: 33%;
+  background-color: #F4B3AF;
+  border-radius: 5px;
+
+}
+
+.botonturnos{
+  width: 200px;
+  height: 25px;
+  background-color: #362727;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-top: 6%;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #fff;
+  padding-top: 23%;
+  padding-right: 10%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+  
